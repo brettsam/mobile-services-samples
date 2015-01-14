@@ -18,9 +18,10 @@
 #import "MSTableOperationError.h"
 #import "MSCoreDataStore.h"
 #import "MSPush.h"
+#import "MSDateOffset.h"
 
 #define WindowsAzureMobileServicesSdkMajorVersion 2
 #define WindowsAzureMobileServicesSdkMinorVersion 0
-#define WindowsAzureMobileServicesSdkBuildVersion 20923
+#define WindowsAzureMobileServicesSdkBuildVersion 30112
 
 #endif

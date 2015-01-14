@@ -55,8 +55,8 @@
     if (self)
     {
         // Initialize the Mobile Service client with your URL and key
-        MSClient *client = [MSClient clientWithApplicationURLString:@"https://donnam-tutorials.azure-mobile.net/"
-                                                     applicationKey:@"xuAdWVDcLuCNfkTvOfaqzCCSBVHqoy96"];
+        MSClient *client = [MSClient clientWithApplicationURLString:@"https://brettsam-offline-blog.azure-mobile.net/"
+                                                     applicationKey:@"YkmwWMsglSpbhDVmxJmXrIUEPfMbcU44"];
 
         // Add a Mobile Service filter to enable the busy indicator
         self.client = [client clientWithFilter:self];
@@ -83,7 +83,7 @@
     
     // Pulls data from the remote server into the local table.
     // We're pulling all items and filtering in refreshDataOnSuccess
-    [self.syncTable pullWithQuery:query completion:^(NSError *error) {
+    [self.syncTable pullWithQuery:query queryId:@"todoList" completion:^(NSError *error) {
         [self logErrorIfNotNil:error];
         [self refreshDataOnSuccess:completion];
     }];
